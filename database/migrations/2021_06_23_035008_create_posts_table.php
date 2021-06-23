@@ -19,6 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('header');
             $table->string('preview');
             $table->text('text');
+
         });
     }
 

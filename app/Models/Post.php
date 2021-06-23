@@ -18,6 +18,5 @@ class Post extends Model
         'header',
         'preview',
         'text',
-
     ];
 }
