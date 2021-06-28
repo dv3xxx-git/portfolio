@@ -19,4 +19,9 @@ class Post extends Model
         'preview',
         'text',
     ];
+
+    public function comments()
+    {
+        return $this->morphMany(Comment::class, 'comment');
+    }
 }

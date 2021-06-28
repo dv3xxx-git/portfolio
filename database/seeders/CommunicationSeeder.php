@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Comment;
+use App\Models\Post;
 use Illuminate\Database\Seeder;
 
 class CommunicationSeeder extends Seeder
@@ -13,6 +15,8 @@ class CommunicationSeeder extends Seeder
      */
     public function run()
     {
-         \App\Models\Post::factory(10)->create();
+        Post::factory(10)->hasComments(3)->create();
+        
+        // Comment::factory(100)->create();
     }
 }
